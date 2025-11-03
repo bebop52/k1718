@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Семёна Ильина - Контакты для сотрудничества в веб-разработке</title>
+    <meta name="description" content="Свяжитесь со Семёном Ильиным - студентом факультета Информационных технологий для сотрудничества в full-stack разработке, React, Vue.js и Node.js проектах">
+    <meta name="keywords" content="Семён Ильин, контакты, веб-разработка, React, Node.js, портфолио">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+        
+        .required-asterisk {
+            color: #dc3545;
+        }
+        
+        .focus-indicator:focus {
+            outline: 3px solid #0066cc;
+            outline-offset: 2px;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #0066cc;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        .contact-link {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .contact-link:hover,
+        .contact-link:focus {
+            color: #6366f1;
+            text-decoration: underline;
+        }
+
+        .text-muted {
+            color: #94a3b8 !important;
+        }
+
+        .btn-outline-primary {
+            color: #6366f1 !important;
+            border-color: #6366f1;
+        }
+
+        .btn-outline-primary:hover {
+            color: #ffffff !important;
+            background-color: #6366f1;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link focus-indicator">Перейти к основному содержанию</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Основная навигация">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="bi bi-laptop me-2" aria-hidden="true"></i>Семён Ильин
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-expanded="false" aria-controls="navbarNav" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="../index.html" role="menuitem">Главная</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="projects.html" role="menuitem">Проекты</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="diary.html" role="menuitem">Дневник</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link active" href="contacts.html" aria-current="page" role="menuitem">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+        <section class="contacts-page py-5 mt-5">
+            <div class="container">
+                <header class="row mb-5">
+                    <div class="col-12">
+                        <h1 class="display-4 text-center mb-4">Контакты</h1>
+                        <p class="lead text-center text-muted">Свяжитесь со мной для сотрудничества в веб-разработке</p>
+                    </div>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-4 mb-5">
+                        <div class="contact-info" role="complementary" aria-labelledby="contact-info-heading">
+                            <h2 id="contact-info-heading" class="visually-hidden">Контактная информация</h2>
+                            
+                            <div class="contact-item card mb-3" role="region" aria-labelledby="email-heading">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-envelope fs-1 text-primary mb-3" aria-hidden="true"></i>
+                                    <h3 id="email-heading" class="h5">Email</h3>
+                                    <p class="text-muted">
+                                        <a href="mailto:ilin.s.v2@edu.mirea.ru" class="contact-link">
+                                            ilin.s.v2@edu.mirea.ru
+                                        </a>
+                                    </p>
+                                    <small class="text-muted">Отвечаю в течение 24 часов</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item card mb-3" role="region" aria-labelledby="phone-heading">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-telephone fs-1 text-success mb-3" aria-hidden="true"></i>
+                                    <h3 id="phone-heading" class="h5">Телефон</h3>
+                                    <p class="text-muted">
+                                        <a href="tel:+75252525252" class="contact-link">
+                                            +7 (525)-252-52-52
+                                        </a>
+                                    </p>
+                                    <small class="text-muted">Telegram/WhatsApp</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item card mb-3" role="region" aria-labelledby="github-heading">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-github fs-1 text-dark mb-3" aria-hidden="true"></i>
+                                    <h3 id="github-heading" class="h5">GitHub</h3>
+                                    <p class="text-muted">
+                                        <a href="https://github.com/bebop52" class="contact-link" target="_blank" rel="noopener noreferrer">
+                                            github.com/bebop52
+                                        </a>
+                                    </p>
+                                    <small class="text-muted">Мои проекты и код</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item card mb-3" role="region" aria-labelledby="linkedin-heading">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-linkedin fs-1 text-info mb-3" aria-hidden="true"></i>
+                                    <h3 id="linkedin-heading" class="h5">LinkedIn</h3>
+                                    <p class="text-muted">
+                                        <a href="https://linkedin.com/in/semyonilin" class="contact-link" target="_blank" rel="noopener noreferrer">
+                                            linkedin.com/in/semyonilin
+                                        </a>
+                                    </p>
+                                    <small class="text-muted">Профессиональный профиль</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-item card" role="region" aria-labelledby="location-heading">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-geo-alt fs-1 text-danger mb-3" aria-hidden="true"></i>
+                                    <h3 id="location-heading" class="h5">Местоположение</h3>
+                                    <p class="text-muted">Москва, Россия</p>
+                                    <small class="text-muted">Открыт к удаленной работе</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="contact-form card">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4" id="contact-form-title">Напишите мне</h2>
+                                <p class="text-muted mb-4">Есть идея для проекта или вам скучно - пишите! Обсудим возможности сотрудничества в веб-разработке.</p>
+                                
+                                <form id="contactForm" aria-labelledby="contact-form-title" novalidate>
+                                    <fieldset>
+                                        <legend class="visually-hidden">Форма обратной связи для связи с Семёном Ильиным</legend>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="name" class="form-label fw-semibold">
+                                                    Имя <span class="required-asterisk" aria-hidden="true">*</span>
+                                                    <span class="visually-hidden">обязательное поле</span>
+                                                </label>
+                                                <input type="text" class="form-control focus-indicator" id="name" 
+                                                       placeholder="Ваше имя" 
+                                                       required 
+                                                       aria-required="true"
+                                                       aria-describedby="name-help">
+                                                <div id="name-help" class="form-text visually-hidden">
+                                                    Введите ваше полное имя для обращения
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label fw-semibold">
+                                                    Email <span class="required-asterisk" aria-hidden="true">*</span>
+                                                    <span class="visually-hidden">обязательное поле</span>
+                                                </label>
+                                                <input type="email" class="form-control focus-indicator" id="email" 
+                                                       placeholder="your.email@example.com" 
+                                                       required 
+                                                       aria-required="true"
+                                                       aria-describedby="email-help">
+                                                <div id="email-help" class="form-text visually-hidden">
+                                                    Введите действующий email адрес для обратной связи
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="company" class="form-label fw-semibold">Компания</label>
+                                            <input type="text" class="form-control focus-indicator" id="company" 
+                                                   placeholder="Название компании (необязательно)"
+                                                   aria-describedby="company-help">
+                                            <div id="company-help" class="form-text">
+                                                Укажите название вашей компании, если это уместно
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="subject" class="form-label fw-semibold">
+                                                Тема сообщения <span class="required-asterisk" aria-hidden="true">*</span>
+                                                <span class="visually-hidden">обязательное поле</span>
+                                            </label>
+                                            <input type="text" class="form-control focus-indicator" id="subject" 
+                                                   placeholder="О чем хотите поговорить?" 
+                                                   required 
+                                                   aria-required="true"
+                                                   aria-describedby="subject-help">
+                                            <div id="subject-help" class="form-text">
+                                                Кратко опишите тему вашего сообщения
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label fw-semibold">
+                                                Сообщение <span class="required-asterisk" aria-hidden="true">*</span>
+                                                <span class="visually-hidden">обязательное поле</span>
+                                            </label>
+                                            <textarea class="form-control focus-indicator" id="message" rows="5" 
+                                                      placeholder="Расскажите о вашем проекте или идее..." 
+                                                      required 
+                                                      aria-required="true"
+                                                      aria-describedby="message-help"></textarea>
+                                            <div id="message-help" class="form-text">
+                                                Подробно опишите ваш проект, идею или вопрос
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input focus-indicator" id="newsletter"
+                                                   aria-describedby="newsletter-help">
+                                            <label class="form-check-label" for="newsletter">
+                                                Подписаться на рассылку о новых проектах и статьях
+                                            </label>
+                                            <div id="newsletter-help" class="form-text">
+                                                Будете получать уведомления о новых проектах и публикациях в блоге
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary btn-lg w-100 focus-indicator">
+                                            <i class="bi bi-send me-2" aria-hidden="true"></i>Отправить сообщение
+                                        </button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="additional-info mt-4" role="complementary" aria-labelledby="additional-info-heading">
+                            <h3 id="additional-info-heading" class="visually-hidden">Дополнительная информация о доступности</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card" role="region" aria-labelledby="response-time-heading">
+                                        <div class="card-body">
+                                            <h4 id="response-time-heading" class="h6">
+                                                <i class="bi bi-clock me-2 text-primary" aria-hidden="true"></i>Время ответа
+                                            </h4>
+                                            <p class="small text-muted mb-0">Отвечаю в течение 24 часов</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card" role="region" aria-labelledby="availability-heading">
+                                        <div class="card-body">
+                                            <h4 id="availability-heading" class="h6">
+                                                <i class="bi bi-briefcase me-2 text-success" aria-hidden="true"></i>Доступность
+                                            </h4>
+                                            <p class="small text-muted mb-0">Открыт для новых проектов</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Семён Ильин. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="contacts.html" class="text-white text-decoration-none">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/form-validation.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const focusableElements = document.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            
+            focusableElements.forEach(element => {
+                element.classList.add('focus-indicator');
+            });
+            
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    focusableElements[0]?.focus();
+                }
+            });
+            
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    const requiredFields = contactForm.querySelectorAll('[required]');
+                    let hasErrors = false;
+                    
+                    requiredFields.forEach(field => {
+                        if (!field.value.trim()) {
+                            field.setAttribute('aria-invalid', 'true');
+                            hasErrors = true;
+                            
+                            let errorElement = field.parentNode.querySelector('.invalid-feedback');
+                            if (!errorElement) {
+                                errorElement = document.createElement('div');
+                                errorElement.className = 'invalid-feedback d-block';
+                                errorElement.textContent = 'Это поле обязательно для заполнения';
+                                errorElement.setAttribute('role', 'alert');
+                                field.parentNode.appendChild(errorElement);
+                            }
+                        } else {
+                            field.setAttribute('aria-invalid', 'false');
+                            const errorElement = field.parentNode.querySelector('.invalid-feedback');
+                            if (errorElement) {
+                                errorElement.remove();
+                            }
+                        }
+                    });
+                    
+                    if (hasErrors) {
+                        event.preventDefault();
+                        const firstError = contactForm.querySelector('[aria-invalid="true"]');
+                        if (firstError) {
+                            firstError.focus();
+                        }
+                    }
+                });
+                
+                contactForm.querySelectorAll('input, textarea').forEach(field => {
+                    field.addEventListener('input', function() {
+                        if (this.hasAttribute('aria-invalid')) {
+                            this.setAttribute('aria-invalid', 'false');
+                            const errorElement = this.parentNode.querySelector('.invalid-feedback');
+                            if (errorElement) {
+                                errorElement.remove();
+                            }
+                        }
+                    });
+                });
+            }
+            
+            const liveRegion = document.createElement('div');
+            liveRegion.setAttribute('aria-live', 'polite');
+            liveRegion.setAttribute('aria-atomic', 'true');
+            liveRegion.className = 'visually-hidden';
+            document.body.appendChild(liveRegion);
+            
+            window.announceToScreenReader = function(message) {
+                liveRegion.textContent = message;
+                setTimeout(() => {
+                    liveRegion.textContent = '';
+                }, 1000);
+            };
+        });
+    </script>
+</body>
+</html>
